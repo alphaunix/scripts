@@ -1,2 +1,2 @@
-# scripts
+# Scripts
 Scripts de trabalho
