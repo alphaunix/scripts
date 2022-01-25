@@ -1,0 +1,14 @@
+---
+
+
+- name: Script ansible para trocar senha usuario linux - autor Wagner Lima
+  hosts: backups 
+  become: yes
+  become_user: root
+  vars:
+          senha: 'digite a nova senha aqui nessa variavel' 
+
+  tasks: 
+          - name: Script ansible - troca passord root - autor Wagner Lima - Alphaunix 
+
+            shell: usermod -p $(openssl passwd -1 '{{senha}}') root 

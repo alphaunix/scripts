@@ -1,0 +1,11 @@
+---
+
+- name: Script ansible para atualizacao de licencas - autor Wagner Lima
+  hosts: servidores_locais 
+  become: yes
+  become_user: root
+
+  tasks:
+          - name: Script ansible - atualiza lincencas servidores locais 
+
+            shell: sed -i 's/02/03/' /var/www/htdocs/altarede/logar.php 
